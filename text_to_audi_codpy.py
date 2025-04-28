@@ -6,7 +6,7 @@ import os
 from gtts import gTTS
 from PIL import Image
 
-st.title("Interfases Multimodales.")
+st.title("Interfaz de Texto a Audio")
 image = Image.open('text_to_audio.png')
 
 st.image(image, width=200)
