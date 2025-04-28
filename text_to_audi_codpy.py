@@ -17,15 +17,15 @@ try:
 except:
     pass
 
-st.subheader("Texto a audio.")
+st.subheader("Introducción")
 st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
          'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
          ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
          ' también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología ' 
-         ' sea más accesible e intuitiva para todos los usuarios')
+         ' sea más accesible e intuitiva para todos los usuarios.')
            
 
-text = st.text_input("Ingrese el texto.")
+text = st.text_input("Ingresa el texto")
 
 tld="es"
 
@@ -42,11 +42,11 @@ def text_to_speech(text, tld):
 
 #display_output_text = st.checkbox("Verifica el texto")
 
-if st.button("convertir"):
+if st.button("Convertir"):
     result, output_text = text_to_speech(text, tld)
     audio_file = open(f"temp/{result}.mp3", "rb")
     audio_bytes = audio_file.read()
-    st.markdown(f"## Tú audio:")
+    st.markdown(f"## Audio Convertido:")
     st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
     #if display_output_text:
