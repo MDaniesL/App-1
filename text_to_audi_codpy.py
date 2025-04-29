@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Interfaz de Texto a Audio")
 image = Image.open('tts.png')
 
-st.image(image, width=1000)
+st.image(image, width=200)
 
 
 try:
