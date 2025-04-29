@@ -41,6 +41,7 @@ def text_to_speech(text, tld):
 
 
 #display_output_text = st.checkbox("Verifica el texto")
+buttonimage = 
 
 if st.button("Convertir a Audio"):
     result, output_text = text_to_speech(text, tld)
