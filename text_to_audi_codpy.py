@@ -52,7 +52,7 @@ if st.button("Convertir a Audio"):
     st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
     #if display_output_text:
-    st.markdown(f"## Texto en audio:")
+    st.markdown(f"## Transcripción del Audio:")
     st.write(f" {output_text}")
 
 
