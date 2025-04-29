@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Interfaz de Texto a Audio")
 image = Image.open('tts.png')
 
-st.image(image, width=200)
+st.image(image, width=1000)
 
 
 try:
@@ -41,7 +41,7 @@ def text_to_speech(text, tld):
 
 
 #display_output_text = st.checkbox("Verifica el texto")
-buttonimage = 
+buttonimage = Image.open('textconvert.png')
 
 if st.button("Convertir a Audio"):
     result, output_text = text_to_speech(text, tld)
